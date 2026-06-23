@@ -1,8 +1,12 @@
+#include <assert.h>
+#include <stdio.h>
+#include "function_numero_aleatorio.c"
+
 int main(void)
 {
     int numero = numero_aleatorio();
 
-    printf("Numero gerado: %d\n", numero);
+    printf("Numero: %d\n", numero);
 
     assert(numero > 0);
 

@@ -1,9 +1,12 @@
-#include <stdlib.h>
-#include <time.h>
-
-int numero_aleatorio()
+int main(void)
 {
-    srand(time(NULL));
-    return 1 + rand() % 1000;
-}
+    int numero = numero_aleatorio();
 
+    printf("Numero gerado: %d\n", numero);
+
+    assert(numero > 0);
+
+    printf("Teste executado com sucesso\n");
+
+    return 0;
+}

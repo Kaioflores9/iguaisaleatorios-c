@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "function_numero_aleatorio.c"
 
-void main()
+int main(void)
 {
     int numero = numero_aleatorio();
     assert(numero > 0);
